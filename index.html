@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css"/>
+  </head>
+  <body>
+    <title>Survey Form</title>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey form about FreeCodeCamp</p>
+    <div id="form-div">
+    <form id="survey-form">
+      <fieldset id="personal-details">
+        <label id="name-label">Name: <input id="name" type="text" placeholder="e.g. Jane Doe" required />
+        </label>
+        <br/>
+        <label id="email-label">Email: <input id="email" type="email" placeholder="e.g. abc@gmail.com" required />
+        </label>
+        <br/>
+        <label id="number-label">Age: <input id="number" type="number" min="12" max="150" placeholder="Optional" />
+        </label>
+      </fieldset>
+      <fieldset id="survey-questions">
+      <label id="satisfaction-label">How satisfied are you with FreeCodeCamp?
+        <select id="dropdown">
+          <option>(Select one)</option>
+          <option>Not satisfied</option>
+          <option>Somewhat satisfied</option>
+          <option>Satisfied</option>
+          <option>Very satisfied</option>
+        </select>
+      </label>
+      <br/>
+      <label id="experience-label">Did you have any prior programming experience?
+        <br/><br/>
+        <input type="radio" name="experience" class="inline" value="yes">Yes
+        <br/>
+        <input type="radio" name="experience" class="inline" value="no">No
+      </label>
+      <br/>
+      <label id="description-label">How would you describe FreeCodeCamp courses?
+        <br/><br/>
+        <input type="checkbox" id="description" class="inline" value="easy-to-follow">Easy to follow
+        <br/>
+        <input type="checkbox" id="description" class="inline" value="interactive">Interactive
+        <br/>
+        <input type="checkbox" id="description" class="inline" value="fun">Fun
+        <br/>
+        <input type="checkbox" id="description" class="inline" value="informative">Informative
+        <br/>
+        <input type="checkbox" id="description" class="inline" value="complicated">Complicated
+        <br/>
+        <input type="checkbox" id="description" class="inline" value="not-informative">Not informative
+        <br/>
+        <input type="checkbox" id="description" class="inline" value="too-broad">Too broad/vague
+        <br/>
+        <input type="checkbox" id="description" class="inline" value="boring">Boring
+      </label>
+      <br/>
+      <label id="comments-label">Any comments or suggestions on how we could improve?
+        <br/><br/>
+        <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Optional"></textarea>
+      </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit"/>
+    </form>
+    </div>
+  </body>
+  <div class="footer">
+  <footer>Thank you for submitting the form! <br/> Background image retrieved from Olena Sergienko on <a href="https://unsplash.com/photos/dIMJWLx1YbE">their Unsplash</p>
+  </footer>
+  </div>
+</html>
